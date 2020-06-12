@@ -3,25 +3,25 @@
 import Layout from '@/layout'
 
 const tableRouter = {
-  path: '/table',
+  path: '/video',
   component: Layout,
-  redirect: '/table/complex-table',
-  name: 'Table',
+  // redirect: '/table/complex-table',
+  name: 'Video',
   meta: {
     title: '视频',
     icon: 'el-icon-video-camera'
   },
   children: [
     {
-      path: 'video-live',
+      path: 'live',
       component: () => import('@/views/video/live/index'),
-      name: 'video-live',
+      name: 'live',
       meta: { title: '直播', icon: 'el-icon-video-camera-solid' }
     },
     {
-      path: 'video-demand',
+      path: 'demand',
       component: () => import('@/views/video/demand/index'),
-      name: 'video-demand',
+      name: 'demand',
       meta: { title: '点播', icon: 'el-icon-video-play' }
     }
   ]
