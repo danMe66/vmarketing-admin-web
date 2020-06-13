@@ -12,7 +12,7 @@ import Layout from '@/layout'
 // import tableRouter from './modules/table'
 // import nestedRouter from './modules/nested'
 import videoRouter from './modules/video'
-import userRouter from './modules/user'
+import WebUserRouter from './modules/wuser'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -56,8 +56,8 @@ export const constantRoutes = [
   },
   // 视频：直播和点播模块
   videoRouter,
-  // 用户模块
-  userRouter,
+  // web用户模块
+  WebUserRouter,
   {
     path: '/redirect',
     component: Layout,

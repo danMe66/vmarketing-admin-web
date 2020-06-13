@@ -3,24 +3,24 @@
 import Layout from '@/layout'
 
 const tableRouter = {
-  path: '/users',
+  path: '/web-user',
   component: Layout,
   // redirect: '/table/complex-table',
-  name: 'User',
+  name: 'WebUser',
   meta: {
     title: '用户',
     icon: 'peoples'
   },
   children: [
     {
-      path: 'web-user',
-      component: () => import('@/views/user/list'),
+      path: 'list',
+      component: () => import('@/views/web-user/list'),
       name: 'web-user',
       meta: { title: '用户管理', icon: 'peoples' }
     },
     {
-      path: 'web-user-tag',
-      component: () => import('@/views/user/tag'),
+      path: 'tag',
+      component: () => import('@/views/web-user/tag'),
       name: 'web-user-tag',
       meta: { title: '用户标签', icon: 'el-icon-price-tag' }
     }
